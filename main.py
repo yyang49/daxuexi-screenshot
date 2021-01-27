@@ -35,7 +35,8 @@ for match in c:
 
 link3="http://h5.cyol.com/special/daxuexi/"+result+"/images/end.jpg"
 
-os.mkdir("page")
+if not os.path.exists("page"):
+  os.mkdir("page")
 with open("page/index.html",'w',encoding='utf8')as f1:
   f1.write("<!doctype html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>")
   f1.write(title)
