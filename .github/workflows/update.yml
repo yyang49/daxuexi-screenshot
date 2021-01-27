@@ -19,7 +19,7 @@ jobs:
           python-version: 3.8
 
       - name: Run
-        run: pip install requests; python3 ./getUpdate.py
+        run: pip install requests; python3 ./main.py
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
