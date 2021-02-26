@@ -19,7 +19,7 @@ for match in a:
   link1=match.group()
 
 str2 = requests.request("GET", link1, headers=headers)
-b=re.finditer(r"http://h5.cyol.com/special/daxuexi/([a-z0-9]+)/m.html\?t=1",str2.content.decode())
+b=re.finditer(r"https://h5.cyol.com/special/daxuexi/([a-z0-9]+)/m.html\?t=1",str2.content.decode())
 result=""
 link2=""
 for match in b: 
