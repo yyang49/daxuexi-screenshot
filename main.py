@@ -24,8 +24,9 @@ result=""
 link2=""
 for match in b: 
   result=match.group(1)
-  link2=match.group()
+  #link2=match.group()
 
+link2="http://h5.cyol.com/special/daxuexi/"+result+"/m.html?t=1"
 str3 = requests.request("GET", link2, headers=headers)
 str3.encoding="utf-8"
 c=re.finditer(r"<title>(.*?)</title>",str3.content.decode())
